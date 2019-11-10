@@ -2,3 +2,10 @@ mat-card {
   width: 40%;
   margin: auto;
 }
+.mat-raised-button {
+  margin: 2%;
+  float:right;
+}
+.mat-form-field{
+  width: 100%;
+}

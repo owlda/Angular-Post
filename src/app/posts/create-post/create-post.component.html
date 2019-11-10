@@ -1,11 +1,13 @@
 <mat-card>
     <mat-card-header>
-      <mat-card-title>Create new message</mat-card-title>
+      <mat-form-field>
+          <input matInput type="text" [(ngModel)]="userTitle">
+      </mat-form-field>
     </mat-card-header>
     <mat-form-field>
-        <textarea matInput rows="8" [(ngModel)]="userPost"></textarea>
+        <textarea matInput rows="8" [(ngModel)]="userContent"></textarea>
     </mat-form-field>
-    <button (click)="AddPost()" mat-button color="primary">Add</button>
+    <mat-card-footer>
+        <button mat-raised-button color="primary" (click)="AddPost()">Add</button>
+    </mat-card-footer>
 </mat-card>
-
-<p>{{ AddPost() }}</p>
