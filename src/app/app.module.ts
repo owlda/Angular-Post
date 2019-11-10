@@ -5,24 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
-import { MatInputModule, MatCardModule, MatButtonModule } from '@angular/material';
+import { MatInputModule, MatCardModule, MatButtonModule, MatToolbarModule, MatExpansionModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { MatToolbarModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { Menu } from './navigation/navigation.component';
-import { CreatePostClass } from './posts/create-post/create-post.component';
 import { ToolbarMultirowClass } from './navbar/navbar.component';
+import { FooterClass } from './footer/footer.component';
+import { CreatePostClass } from './posts/create-post/create-post.component';
+import { ListPostClass } from './posts/list-post/list-post.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CreatePostClass,
+    ListPostClass,
     Menu,
-    ToolbarMultirowClass
+    ToolbarMultirowClass,
+    FooterClass
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { ToolbarMultirowClass } from './navbar/navbar.component';
     MatToolbarModule,
     ReactiveFormsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatExpansionModule
   ],
   exports: [],
   providers: [],
