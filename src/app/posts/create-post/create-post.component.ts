@@ -9,13 +9,10 @@ import { Component } from '@angular/core';
 })
 
 export class CreatePostClass{
-  userPost;
-
+  // attribures
+  userPost = "No message";
+  // functions
   AddPost(){
-
     return this.userPost;
-
   }
-
-
 }

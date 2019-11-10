@@ -15,14 +15,15 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { Menu } from './navigation/navigation.component';
 import { CreatePostClass } from './posts/create-post/create-post.component';
 import { ToolbarMultirowClass } from './navbar/navbar.component';
-
+import { FooterClass } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreatePostClass,
     Menu,
-    ToolbarMultirowClass
+    ToolbarMultirowClass,
+    FooterClass
   ],
   imports: [
     BrowserModule,
