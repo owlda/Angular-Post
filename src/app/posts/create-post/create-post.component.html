@@ -1,1 +1,8 @@
-<h1>Welcome to form create component</h1>
+<mat-card>
+    <mat-form-field>
+        <textarea matInput rows="8" [(ngModel)]="userPost"></textarea>
+    </mat-form-field>
+    <button (click)="AddPost()" mat-button color="primary">Add</button>
+</mat-card>
+
+<p>{{ AddPost() }}</p>

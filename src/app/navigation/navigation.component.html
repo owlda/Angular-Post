@@ -1,5 +1,5 @@
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
+<button mat-menu-item [matMenuTriggerFor]="aboveMenu" id="posts">Posts</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Create</button>
+  <button mat-menu-item>Show the posts</button>
 </mat-menu>
