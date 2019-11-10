@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
 
   selector: 'app-menu',
-  templateUrl: './navigation.component.html'
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.css']
 })
-export class Menu { }
+export class Menu {}

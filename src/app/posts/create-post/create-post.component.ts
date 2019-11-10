@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 
 })
 
-export class CreatePostClass{}
+export class CreatePostClass{
+  userPost;
+
+  AddPost(){
+
+    return this.userPost;
+
+  }
+
+
+}
