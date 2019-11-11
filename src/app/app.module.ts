@@ -16,6 +16,7 @@ import { ToolbarMultirowClass } from './navbar/navbar.component';
 import { FooterClass } from './footer/footer.component';
 import { CreatePostClass } from './posts/create-post/create-post.component';
 import { ListPostClass } from './posts/list-post/list-post.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ListPostClass } from './posts/list-post/list-post.component';
     ListPostClass,
     Menu,
     ToolbarMultirowClass,
-    FooterClass
+    FooterClass,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
