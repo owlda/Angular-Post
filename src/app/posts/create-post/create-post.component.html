@@ -4,12 +4,12 @@
       <mat-card-title>Create new post</mat-card-title>
         <mat-card-header>
             <mat-form-field>
-                <input matInput type="text" ngModel name="title" required #title="ngModel">
+                <input matInput type="text" ngModel name="title" required #title="ngModel" placeholder="Title">
                 <mat-error *ngIf="title.invalid">Enter a title...</mat-error>
             </mat-form-field>
           </mat-card-header>
           <mat-form-field>
-              <textarea matInput rows="8" ngModel name="content" required #content="ngModel"></textarea>
+              <textarea matInput rows="8" ngModel name="content" required #content="ngModel" placeholder="Message"></textarea>
               <mat-error *ngIf="content.invalid">Enter some content...</mat-error>
           </mat-form-field>
           <mat-card-footer>
