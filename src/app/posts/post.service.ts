@@ -3,13 +3,13 @@ import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
-export class PostService{
+export class PostService {
   private posts: Post[] = [];
   private ifPostUpdated = new Subject<Post[]>();
   getPosts() {
     return [...this.posts];
   }
-  getPostsUpdates(){
+  getPostsUpdates() {
     return this.ifPostUpdated.asObservable();
   }
   addPost(title: string, content: string) {

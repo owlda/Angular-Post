@@ -1,6 +1,7 @@
 
 <form (submit)="AddPost(postForm)" #postForm="ngForm">
     <mat-card>
+      <mat-card-title>Create new post</mat-card-title>
         <mat-card-header>
             <mat-form-field>
                 <input matInput type="text" ngModel name="title" required #title="ngModel">
