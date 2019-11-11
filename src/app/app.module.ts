@@ -9,6 +9,7 @@ import { MatInputModule, MatCardModule, MatButtonModule, MatToolbarModule, MatEx
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
 
 import { Menu } from './navigation/navigation.component';
@@ -31,6 +32,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
@@ -42,6 +44,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MatCardModule,
     MatButtonModule,
     MatExpansionModule
+
   ],
   exports: [],
   providers: [],

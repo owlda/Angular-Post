@@ -18,6 +18,5 @@ export class CreatePostClass {
     if ( form.invalid ) {
       return null;
     }
-    this.postService.addPost(form.value.title, form.value.content);
-  }
+      }
 }
