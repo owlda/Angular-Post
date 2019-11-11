@@ -16,12 +16,12 @@ export class ListPostClass implements OnInit, OnDestroy {
   constructor(public postService: PostService) {}
 
   ngOnInit(){
-    this.posts = this.postService.getPosts();
-    this.postSubscription = this.postService.getPostsUpdates().subscribe(( posts: Post[] ) => {
+    this.postService.getPosts();
+    this.postSubscription = this.postService.GetPostUpdateListener().subscribe(( posts: Post[] ) => {
       this.posts = posts;
     });
   }
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.postSubscription.unsubscribe();
   }
 

@@ -9,6 +9,7 @@ import { MatInputModule, MatCardModule, MatButtonModule, MatToolbarModule, MatEx
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
 
 import { Menu } from './navigation/navigation.component';
@@ -16,6 +17,7 @@ import { ToolbarMultirowClass } from './navbar/navbar.component';
 import { FooterClass } from './footer/footer.component';
 import { CreatePostClass } from './posts/create-post/create-post.component';
 import { ListPostClass } from './posts/list-post/list-post.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 @NgModule({
@@ -25,10 +27,12 @@ import { ListPostClass } from './posts/list-post/list-post.component';
     ListPostClass,
     Menu,
     ToolbarMultirowClass,
-    FooterClass
+    FooterClass,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
@@ -40,6 +44,7 @@ import { ListPostClass } from './posts/list-post/list-post.component';
     MatCardModule,
     MatButtonModule,
     MatExpansionModule
+
   ],
   exports: [],
   providers: [],
